@@ -1,0 +1,16 @@
+{
+  "name": "paraiso-do-sorriso",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Site institucional do Paraíso do Sorriso (HTML/CSS/JS estático, sem build).",
+  "scripts": {
+    "lint": "biome check .",
+    "lint:fix": "biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  },
+  "allowScripts": {
+    "@biomejs/biome@1.9.4": true
+  }
+}
