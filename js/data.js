@@ -65,4 +65,30 @@ const CLINICA_DATA = {
   // Nenhum depoimento de texto foi fornecido ainda — só a nota agregada
   // do Google é real (usada no Hero e na seção de Avaliações).
   depoimentos: [],
+
+  // Perguntas reais que qualquer visitante de clínica costuma ter.
+  // Respostas: só o que já é fato confirmado neste projeto; o resto fica
+  // como placeholder explícito até a clínica confirmar.
+  faq: [
+    {
+      pergunta: "Preciso agendar horário ou posso chegar direto?",
+      resposta: "[A confirmar com a clínica]",
+    },
+    {
+      pergunta: "Vocês atendem convênio odontológico?",
+      resposta: "[A confirmar com a clínica]",
+    },
+    {
+      pergunta: "Qual o horário de funcionamento?",
+      resposta: "[Horário de funcionamento completo]",
+    },
+    {
+      pergunta: "Como faço para agendar minha consulta?",
+      resposta: "Pelo WhatsApp (11) 95374-9949 — é a forma mais rápida de falar com a clínica.",
+    },
+    {
+      pergunta: "Onde fica a clínica exatamente?",
+      resposta: "Estr. dos Romeiros, 619, Jardim Regina Alice, Barueri - SP, 06412-000.",
+    },
+  ],
 };

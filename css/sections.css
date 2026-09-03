@@ -30,6 +30,13 @@
   margin-top: var(--space-6);
 }
 
+.response-promise {
+  margin-top: var(--space-4);
+  font-size: var(--fs-small);
+  color: var(--ink-500);
+  font-style: italic;
+}
+
 #hero-rating { margin-top: var(--space-6); }
 
 .hero__photo { order: -1; }
@@ -78,6 +85,58 @@
 }
 
 .tratamentos-cta { margin-top: var(--space-7); }
+
+/* ===== Resultados (antes/depois) ===== */
+.resultados-grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.resultado-item__photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.resultado-item__photos .photo-slot {
+  aspect-ratio: 1 / 1;
+}
+
+.resultado-item__nota {
+  margin-top: var(--space-3);
+  font-size: var(--fs-small);
+  color: var(--ink-500);
+  font-style: italic;
+}
+
+/* ===== FAQ ===== */
+.faq-list {
+  display: grid;
+  gap: 0;
+  max-width: 44rem;
+}
+
+.faq-item {
+  padding-block: var(--space-5);
+  border-bottom: var(--border-hairline);
+}
+
+.faq-item:first-child {
+  border-top: var(--border-hairline);
+}
+
+.faq-item dt {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.0625rem;
+  color: var(--ink-900);
+}
+
+.faq-item dd {
+  margin: var(--space-2) 0 0;
+  color: var(--ink-700);
+  font-size: var(--fs-small);
+}
 
 /* ===== Profissionais ===== */
 .profissionais-list {

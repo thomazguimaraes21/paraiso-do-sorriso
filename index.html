@@ -11,6 +11,10 @@
   <meta property="og:title" content="Paraíso do Sorriso | Clínica Odontológica em Barueri" />
   <meta property="og:description" content="Clínica odontológica no Jardim Regina Alice, Barueri - SP. Agende sua consulta pelo WhatsApp." />
   <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="images/logo/paraiso-logo-full.png" />
+  <meta property="og:image:width" content="1222" />
+  <meta property="og:image:height" content="745" />
+  <meta name="twitter:card" content="summary" />
 
   <link rel="icon" href="images/logo/paraiso-mark.png" type="image/png" />
 
@@ -18,11 +22,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/tokens.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/tokens.css?v=2" />
+  <link rel="stylesheet" href="css/base.css?v=2" />
+  <link rel="stylesheet" href="css/layout.css?v=2" />
+  <link rel="stylesheet" href="css/components.css?v=2" />
+  <link rel="stylesheet" href="css/sections.css?v=2" />
+
+  <!--
+    Google Analytics (GA4) — desligado de propósito. Não temos o Measurement
+    ID real da clínica, e um ID inventado não rastreia nada (só manda dado
+    pro void ou, pior, pra uma propriedade que não é dela). Quando tiver o
+    ID real (analytics.google.com → Admin → Fluxos de dados → Web), troque
+    G-XXXXXXXXXX abaixo e descomente as duas tags.
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+  -->
 
   <!-- Dados estruturados — só com informações reais confirmadas. -->
   <script type="application/ld+json">
@@ -120,6 +140,8 @@
             <a class="btn btn--ghost" href="#clinica">Conheça a clínica</a>
           </div>
 
+          <p class="response-promise">[Tempo médio de resposta pelo WhatsApp: a confirmar]</p>
+
           <div class="rating" id="hero-rating">
             <span class="rating__stars" aria-hidden="true"></span>
             <span><span class="rating__score">4,5</span> no Google · 22 avaliações</span>
@@ -168,6 +190,26 @@
       </div>
     </section>
 
+    <!-- ===== RESULTADOS ===== -->
+    <section class="section" aria-labelledby="resultados-titulo">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Resultados</p>
+          <h2 id="resultados-titulo">Sorrisos transformados</h2>
+        </div>
+
+        <div class="resultados-grid">
+          <div class="resultado-item">
+            <div class="resultado-item__photos">
+              <div class="photo-slot"><p class="photo-slot__label">Antes</p></div>
+              <div class="photo-slot"><p class="photo-slot__label">Depois</p></div>
+            </div>
+            <p class="resultado-item__nota">Espaço reservado para um caso real, com autorização do paciente.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== PROFISSIONAIS ===== -->
     <section class="section" id="profissionais" aria-labelledby="profissionais-titulo">
       <div class="container">
@@ -210,6 +252,18 @@
           Espaço reservado para depoimentos reais de pacientes.<br />
           Assim que forem selecionados, entram aqui.
         </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section--alt" aria-labelledby="faq-titulo">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Dúvidas</p>
+          <h2 id="faq-titulo">Perguntas frequentes</h2>
+        </div>
+
+        <dl class="faq-list" id="faq-list"></dl>
       </div>
     </section>
 
@@ -356,11 +410,14 @@
     </div>
 
     <div class="container footer__bottom">
-      <p>&copy; <span id="ano-atual"></span> Paraíso do Sorriso. Todos os direitos reservados.</p>
+      <p>
+        &copy; <span id="ano-atual"></span> Paraíso do Sorriso. Todos os direitos reservados.
+        · <a href="privacidade.html" style="text-decoration:underline;">Política de Privacidade</a>
+      </p>
     </div>
   </footer>
 
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/data.js?v=2"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>

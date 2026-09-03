@@ -17,6 +17,7 @@
     initTratamentos();
     initProfissionais();
     initDiferenciais();
+    initFaq();
     initFooterYear();
   });
 
@@ -236,6 +237,23 @@
           d.texto +
           "</p>" +
           "</div>",
+      )
+      .join("");
+  }
+
+  function initFaq() {
+    if (typeof CLINICA_DATA === "undefined") return;
+    var list = document.getElementById("faq-list");
+    if (!list) return;
+
+    list.innerHTML = CLINICA_DATA.faq
+      .map(
+        (item) =>
+          '<div class="faq-item"><dt>' +
+          item.pergunta +
+          "</dt><dd>" +
+          item.resposta +
+          "</dd></div>",
       )
       .join("");
   }
